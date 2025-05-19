@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="styles/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -23,7 +24,7 @@
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
             <span class="text-3xl text-white font-bold mt-4 mb-1">Red Burguer</span>
             <p class="text-white font-medium">Rua dev sucesso, 12, Campo Grande, MS</p>
-            <div class="bg-green-500 rounded-lg px-4 py-1 mt-5">
+            <div class="bg-green-500 rounded-lg px-4 py-1 mt-5" id="date-span">
                 <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00</span>
             </div>
         </div>
@@ -168,7 +169,7 @@
             <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
             <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
             <p class="font-bold mt-4">Endereço de entrega</p>
-            <input type="text" placeholder="Digite seu endereço completo" id="address" class="w-full border-2 rouded my-1 p-1">
+            <input type="text" placeholder="Digite seu endereço completo" id="address" class="w-full rounded border-2 my-1 p-1 placeholder-gray-600">
             <!-- Parágrafo para caso o usuário não digitar o endereço -->
             <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
         
@@ -189,6 +190,8 @@
         </button>
     </footer>
     <!-- Fim Button cart Footer -->
-     <script src="scripts.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
